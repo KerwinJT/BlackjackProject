@@ -57,4 +57,6 @@ public class BlackjackHand extends Hand {
 		this.cards = new ArrayList<Card>();
 	}
 
+	
+
 }

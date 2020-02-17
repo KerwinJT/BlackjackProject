@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Set;
 
 import com.skilldistillery.blackjack.hands.BlackjackHand;
-import com.skilldistillery.blackjack.hands.Hand;
 
 public class CardFacePrinter {
 

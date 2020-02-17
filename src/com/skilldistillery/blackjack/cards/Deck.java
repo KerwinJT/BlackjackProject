@@ -50,7 +50,7 @@ public class Deck {
 			return deckOfCards.remove(0);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.out.println("*** Dealing new deck ***".toUpperCase());
+//			System.out.println("*** Dealing new deck ***".toUpperCase());
 			newDeck();
 			shuffleDeck();
 			return deckOfCards.remove(0);
