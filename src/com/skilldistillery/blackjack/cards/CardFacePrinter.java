@@ -68,15 +68,15 @@ public class CardFacePrinter {
 		List<Card> dealerHand = new ArrayList<Card>();
 		dealerHand.addAll(hand.getHand());
 
-		newCard = dealerHand.get(0);
+		newCard = dealerHand.get(1);
 		String topBottom = "+---+  ";
 		String middleRank = "| " + newCard.getRank().getLowerCaseName() + " |  ";
 		String topSymbol = "|" + newCard.getSuit().getSymbol() + "  |  ";
 		String bottomSymbol = "|  " + newCard.getSuit().getSymbol() + "|  ";
 		buildHand.put("Top", topBottom + topBottom);
-		buildHand.put("TopSymbol", topSymbol + "|***|");
-		buildHand.put("MiddleRank", middleRank + "|***|");
-		buildHand.put("BottomSymbol", bottomSymbol + "|***|");
+		buildHand.put("TopSymbol", "|***|  "+ topSymbol);
+		buildHand.put("MiddleRank", "|***|  " +middleRank );
+		buildHand.put("BottomSymbol", "|***|  " + bottomSymbol);
 		buildHand.put("Bottom", topBottom + topBottom);
 
 		Set<String> keySet = buildHand.keySet();

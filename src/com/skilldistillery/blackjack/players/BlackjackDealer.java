@@ -1,7 +1,7 @@
 package com.skilldistillery.blackjack.players;
 
-import com.skilldistillery.blackjack.hands.*;
 //import com.skilldistillery.blackjack.hands.Hand;
+import com.skilldistillery.blackjack.hands.BlackjackHand;
 
 public class BlackjackDealer extends BlackjackPlayer {
 //	private Deck deck;
