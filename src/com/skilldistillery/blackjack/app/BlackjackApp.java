@@ -46,6 +46,7 @@ public class BlackjackApp {
 			}
 
 		}
+		System.out.println("Thank you for playing Blackjack!");
 
 	}
 
@@ -124,6 +125,7 @@ public class BlackjackApp {
 		}
 		return true;
 	}
+	
 	private void resetHands() {
 		blackJackPlayer.getHand().scuttleHands();
 		dealer.getHand().scuttleHands();
