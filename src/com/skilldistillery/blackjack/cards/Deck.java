@@ -44,7 +44,7 @@ public class Deck {
 		System.out.println("Cards left in the deck: " + deckOfCards.size());
 	}
 	
-	protected Card dealACard() {
+	public Card dealACard() {
 		
 		try {
 			return deckOfCards.remove(0);

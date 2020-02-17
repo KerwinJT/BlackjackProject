@@ -1,27 +1,28 @@
 package com.skilldistillery.blackjack.hands;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.skilldistillery.blackjack.cards.Card;
 
 public abstract class Hand {
 	private List<Card> cards;
 	
-	public Hand() {
-		cards = new ArrayList<Card>();
-		// TODO Auto-generated constructor stub
-	}
+	public Hand() {}
+	public List<Card> getHand(){
+		return cards;}
 	
-	public void addCard(Card card) {
-		cards.add(card);
-	}
+	public void addCard(Card card) {}
 	
-	public void clear() {
-		cards = new ArrayList<Card>();
-//		cards.removeAll(cards); //What will this do?
-	}
+	public void clear() {}
 	
-	public abstract int getHandValue();
+	public int getHandValue() {
+		int value = 0;
+		for (Card card : cards) {
+			value += card.getRank().getValue();
+		}
+		return value;
+	}
 
 	@Override
 	public String toString() {
@@ -30,5 +31,9 @@ public abstract class Hand {
 		return "Hand [cards=" + cards + "]";
 	}
 	
+	
+	public void scuttleHands() {
+		this.cards = new ArrayList<Card>();
+	}
 	
 }
